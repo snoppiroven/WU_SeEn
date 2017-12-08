@@ -7,18 +7,76 @@
         <meta name="keyword" content="web designe, affordable web designe">
         <meta name="author" content="Sebastian">
         <link rel="stylesheet" href="./huvud sidan/assets/css/html5reset.css">
-        <link rel="stylesheet" href="./Bloggen/assets/css/blogg1.css">
+        <link rel="stylesheet" href="./assets/css/blogg1.css">
         <title>Motorblogg</title>
     </head>
     <body>
-        <heading>
-            <div class="Titel">
-                <h2>Motorblogg</h2>
-                <a href="#">Bloggen</a>
-                <a href="#">Om bloggskrivaren</a>
-                <a href="#">Tips på delar</a>
-                <img src="./Bloggen/img/512ef438-86f2-4e86-9de3-4a134f7f62e7.png">
+        <header>
+            <nav>
+                 <ul class="sidenav">
+                    <div class="navrub">
+                        <li><h3>Mopeder delar och en massa skit</h3></li>
+                    </div>
+                    <li><a href="./blogg1l.html">Startsida</a></li>
+                    <li><a href="./bloggen.html">Bloggen</a></li>
+                    <li><a href="./aboutb.html">Om bloggskrivaren</a></li>
+                    <li><a href="./delar.html">Tips på delar</a></li>
+                    <li><a href="./l%C3%A4nkar.html">Länkar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content" id="start">
+            <div class="logo">
+                <a href="./blogg1l.html"><img src="./img/87efdea3-a299-495d-a189-0a24da07ca6e.png"></a>
             </div>
-        </heading>
+            <img src="./img/19732163_10213910833795558_4219909226462175561_n.jpg">
+        
+            <p class="textett">Denna blogg handlar om mopeder och moped delar samt lite om motorcyklar och lite om erfarenheten man får när man mekar med mopeder. Jag har olika mopeder och kommer skriva lite om dem jag håller på att fixa med och kommer uppdatera hur de går och delar jag köper till den mopeden. På fliken i menyn så finns det en länk som heter Bloggen om man klickar på den kommer de komma upp en till meny där man kan följa vilken av mopederna man vill läsa om. Det kanske inte står saker om alla mopeder men de ska komma upp så småningom. Här komer lite bilder på de mopeder jag har</p>
+            <div id="cf7" class="shadow">
+                <img class='opaque' src="/img/21.jpg" />
+                <img src="/img/19511385_10154830635838262_3632913698116671632_n.jpg" />
+                <img src="/img/moped_1.jpg" />
+                <img src="/img/download-4.jpg" />
+            </div>
+<p id="cf7_controls">
+  <span class="selected">Image 1</span>
+  <span>Image 2</span>
+  <span>Image 3</span>
+  <span>Image 4</span>
+</p>
+
+        </div>
+        <script type="text/javascript">
+  $(document).ready(function(){                
+        $(window).bind('scroll',fetchMore);
+   });
+
+   fetchMore = function (){
+       if ( $(window).scrollTop() >= $(document).height()-$(window).height()-300 ){
+           $(window).unbind('scroll',fetchMore);
+            $.post('ajax/ajax_manager.php',{'action':'moreReviews','start':$('.review').length,'step':5 },
+            function(data) {
+               if(data.length>10){
+                    $(data).insertBefore($('#moreHolder'));
+                    $(window).bind('scroll',fetchMore);
+               }
+            });
+        }
+   }
+        </script>
+        <script>
+            $(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+        </script>
     </body>
 </html>
