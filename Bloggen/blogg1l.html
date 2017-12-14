@@ -8,6 +8,10 @@
         <meta name="author" content="Sebastian">
         <link rel="stylesheet" href="./huvud sidan/assets/css/html5reset.css">
         <link rel="stylesheet" href="./assets/css/blogg1.css">
+        <!-- Start WOWSlider.com HEAD section -->
+        <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+        <script type="text/javascript" src="engine1/jquery.js"></script>
+        <!-- End WOWSlider.com HEAD section -->
         <title>Motorblogg</title>
     </head>
     <body>
@@ -29,54 +33,43 @@
             <div class="logo">
                 <a href="./blogg1l.html"><img src="./img/87efdea3-a299-495d-a189-0a24da07ca6e.png"></a>
             </div>
-            <img src="./img/19732163_10213910833795558_4219909226462175561_n.jpg">
-        
-            <p class="textett">Denna blogg handlar om mopeder och moped delar samt lite om motorcyklar och lite om erfarenheten man får när man mekar med mopeder. Jag har olika mopeder och kommer skriva lite om dem jag håller på att fixa med och kommer uppdatera hur de går och delar jag köper till den mopeden. På fliken i menyn så finns det en länk som heter Bloggen om man klickar på den kommer de komma upp en till meny där man kan följa vilken av mopederna man vill läsa om. Det kanske inte står saker om alla mopeder men de ska komma upp så småningom. Här komer lite bilder på de mopeder jag har</p>
-            <div id="cf7" class="shadow">
-                <img class='opaque' src="/img/21.jpg" />
-                <img src="/img/19511385_10154830635838262_3632913698116671632_n.jpg" />
-                <img src="/img/moped_1.jpg" />
-                <img src="/img/download-4.jpg" />
-            </div>
-<p id="cf7_controls">
-  <span class="selected">Image 1</span>
-  <span>Image 2</span>
-  <span>Image 3</span>
-  <span>Image 4</span>
-</p>
-
+            <img class"bloggstart" src="./img/19732163_10213910833795558_4219909226462175561_n.jpg">
         </div>
-        <script type="text/javascript">
-  $(document).ready(function(){                
-        $(window).bind('scroll',fetchMore);
-   });
-
-   fetchMore = function (){
-       if ( $(window).scrollTop() >= $(document).height()-$(window).height()-300 ){
-           $(window).unbind('scroll',fetchMore);
-            $.post('ajax/ajax_manager.php',{'action':'moreReviews','start':$('.review').length,'step':5 },
-            function(data) {
-               if(data.length>10){
-                    $(data).insertBefore($('#moreHolder'));
-                    $(window).bind('scroll',fetchMore);
-               }
-            });
-        }
-   }
-        </script>
-        <script>
-            $(document).ready(function() {
-  $("#cf7_controls").on('click', 'span', function() {
-    $("#cf7 img").removeClass("opaque");
-
-    var newImage = $(this).index();
-
-    $("#cf7 img").eq(newImage).addClass("opaque");
-
-    $("#cf7_controls span").removeClass("selected");
-    $(this).addClass("selected");
-  });
-});
-        </script>
+        <div class="content">
+            <h2>Information om bloggen</h2>
+            <p>Denna blogg handlar om mopeder och moped delar samt lite om motorcyklar och lite om erfarenheten man får när man mekar med mopeder. Jag har olika mopeder och kommer skriva lite om dem jag håller på att fixa med och kommer uppdatera hur de går och delar jag köper till den mopeden. På fliken i menyn så finns det en länk som heter Bloggen om man klickar på den kommer de komma upp en till meny där man kan följa vilken av mopederna man vill läsa om. Det kanske inte står saker om alla mopeder men de ska komma upp så småningom. Här komer lite bilder på de mopeder jag har pch även några bilder från moped cruisingar:</p>
+            <!-- Start WOWSlider.com BODY section -->
+            <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                    <li><img src="data1/images/10538552_10204670373949837_9174267634051460589_n.jpg" alt="" title="" id="wows1_0"/></li>
+                    <li><img src="data1/images/10609485_10204669402725557_2919745397450691338_n.jpg" alt="" title="" id="wows1_1"/></li>
+                    <li><img src="data1/images/13240130_10209751875464199_7420538336032029616_n.jpg" alt="" title="" id="wows1_2"/></li>
+                    <li><img src="data1/images/1378300_10202192462363596_1419287526_n.jpg" alt="" title="" id="wows1_3"/></li>
+                    <li><img src="data1/images/18556250_10213424846326175_5584865193100239141_n.jpg" alt="" title="" id="wows1_4"/></li>
+                    <li><img src="data1/images/19511385_10154830635838262_3632913698116671632_n.jpg" alt="" title="" id="wows1_5"/></li>
+                    <li><img src="data1/images/19732163_10213910833795558_4219909226462175561_n.jpg" alt="" title="" id="wows1_6"/></li>
+                    <li><img src="data1/images/21.jpg" alt="" title="" id="wows1_7"/></li>
+                    <li><img src="data1/images/download1.jpg" alt="" title="" id="wows1_8"/></li>
+                    <li><img src="data1/images/download2.jpg" alt="" title="" id="wows1_9"/></li>
+                    <li><img src="data1/images/download3.jpg" alt="" title="" id="wows1_10"/></li>
+                    <li><img src="data1/images/download4.jpg" alt="" title="" id="wows1_11"/></li>
+                    <li><img src="data1/images/download5.jpg" alt="" title="" id="wows1_12"/></li>
+                    <li><img src="data1/images/download.jpg" alt="" title="" id="wows1_13"/></li>
+                    <li><img src="data1/images/mofa.jpg" alt="" title="" id="wows1_14"/></li>
+                    <li><a href="http://wowslider.net"><img src="data1/images/moped_1.jpg" alt="jquery slider" title="" id="wows1_15"/></a></li>
+                    <li><img src="data1/images/sachs__kx_50_1996_4_lgw.jpg" alt="" title="" id="wows1_16"/></li>
+                    </ul></div>
+                
+                <div class="ws_shadow"></div>
+            </div>
+        </div>	
+        <script type="text/javascript" src="engine1/wowslider.js"></script>
+        <script type="text/javascript" src="engine1/script.js"></script>
+        <!-- End WOWSlider.com BODY section -->
     </body>
+    <footer>
+        <div class="content">
+            <p>&copy; 2017/2018 motorblogg WU_SeEn</p>
+        </div>
+    </footer>
 </html>

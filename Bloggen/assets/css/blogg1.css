@@ -1,3 +1,24 @@
+img.about {
+    width: 50%;
+    height: auto;
+}
+
+footer{
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: thin;
+}
+
+div.content p {
+    color: white;
+    font-family: sans-serif;
+}
+
+div.content h2{
+    color: white;
+    font-family: serif;
+}
+
 p#cf7_controls {
   text-align:center;
 }
@@ -29,7 +50,7 @@ p#cf7_controls {
   filter: alpha(opacity=1);
 }
 
-div#start img {
+img.bloggstart {
     width: 100%;
     height: auto;
 }
@@ -55,6 +76,8 @@ div.navrub{
     border-bottom-style: solid;
     border-bottom-color: black;
     text-align: center;
+    color: white;
+    font-family: cursive;
 }
 
 div.content a {
@@ -63,14 +86,17 @@ div.content a {
     width: 40%;
 }
 
-body {margin: 0;}
+body {
+    margin: 0;
+    background-color: #262423;
+}
 
 ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: dimgrey;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -79,7 +105,7 @@ ul.sidenav {
 
 ul.sidenav li a {
     display: block;
-    color: #000;
+    color: #fff;
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -90,18 +116,13 @@ ul.sidenav li a.active {
 }
 
 ul.sidenav li a:hover:not(.active) {
-    background-color: #555;
+    background-color: #e56904;
     color: white;
-}
-
-ul.sidenav h3 {
-    
-}
+}    
 
 div.content {
     margin-left: 25%;
     padding: 1px 16px;
-    height: 1000px;
 }
 
 @media screen and (max-width: 900px) {
