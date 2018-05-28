@@ -1,7 +1,4 @@
-div.conten{
-    margin-left: 25%;
-}
-
+/* Dem med diven pett är dem jag ville ha utsenende på i en speciel flik på sidan vilket finns i länkar.html*/
 h3.pett{
     color: white;
 }
@@ -10,22 +7,24 @@ p.pett{
     text-align: left;
     color: white;
 }
-
+/* img.limk är till dem bilder på länkar.html*/
 img.link{
     width: 10%;
     height: auto;
 }
+/* Dett är en border jag har på sidan*/
 .strack{
     border-bottom-style: solid;
     border-bottom-color: white;
     border-bottom-width: thin;
 }
 
+/* Plasering av content*/
 img.bloggcont {
     width: 100%;
     height: auto
 }
-
+/* Hur alla h1 rubriker skall se ut*/
 h1 {
     text-align: center;
     color: white;
@@ -34,27 +33,19 @@ h1 {
     border-bottom-width: thin;
 }
 
+/* Bilderna i about.html alltså hur dem skall placeras och hur stora dem skall vara*/
 img.about {
     width: 50%;
     height: auto;
 }
-
+/* footern på sidan och här i css har jag lagt till en border för att avskärma footern från content*/
 footer{
     border-top-style: solid;
     border-top-color: white;
     border-top-width: thin;
 }
 
-div.content p {
-    color: white;
-    font-family: sans-serif;
-}
-
-div.content h2{
-    color: white;
-    font-family: serif;
-}
-
+/* Alla med #cf7 är till wowslider scriptet alltså hur bildspelet skall se ut och hur bilderna ska ändra sig. Dock ändrs utseendet på själva förändringen mest i scriptet denna kod ändrar mest hur bilderna skall se ut och hur allt placeras.*/
 p#cf7_controls {
   text-align:center;
 }
@@ -86,15 +77,17 @@ p#cf7_controls {
   filter: alpha(opacity=1);
 }
 
+/* Bilder på första sidan av bloggen*/
 img.bloggstart {
     width: 100%;
     height: auto;
 }
 
+/* */
 textett {
     text-align: center;
 }
-
+/* Hur logon skall placeras och storleken på logon*/
 div.logo {
     
     display: block;
@@ -103,11 +96,8 @@ div.logo {
     height: auto;
 }
 
-div.content ul {
-    list-style-type: none;
-    text-align: center;
-}
 
+/* Detta är till utseendet av rubriken som finns i navbaren. Sen en border för att avsskilja rubriken från länkarna */
 div.navrub{
     border-bottom-style: solid;
     border-bottom-color: black;
@@ -116,17 +106,41 @@ div.navrub{
     font-family: cursive;
 }
 
+
+/* Bakgrundfärg på hela sidan*/
+body {
+    margin: 0;
+    background-color: #262423;
+}
+
+/* alla div.content under denna kommentar handlar om hur innehållet på sidan ser ut och placeras.*/
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+}
+
+div.content ul {
+    list-style-type: none;
+    text-align: center;
+}
+
 div.content a {
     display: block;
     margin: auto;
     width: 40%;
 }
 
-body {
-    margin: 0;
-    background-color: #262423;
+div.content p {
+    color: white;
+    font-family: sans-serif;
 }
 
+div.content h2{
+    color: white;
+    font-family: serif;
+}
+
+/*Detta är naven alltså där länkarna finns till andra delar av bloggen. */
 ul.sidenav {
     list-style-type: none;
     margin: 0;
@@ -154,13 +168,9 @@ ul.sidenav li a.active {
 ul.sidenav li a:hover:not(.active) {
     background-color: #e56904;
     color: white;
-}    
+} 
 
-div.content {
-    margin-left: 25%;
-    padding: 1px 16px;
-}
-
+/* dett är hur sidan fungerar med att naven byter plats. */
 @media screen and (max-width: 900px) {
     ul.sidenav {
         width: 100%;
